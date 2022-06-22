@@ -9,7 +9,7 @@ public class Principal extends Matematica {
 		Matematica m = new Matematica();
 		Scanner leia = new Scanner(System.in);
 			
-		//Recebe dois valores double e retorna um resultado double.
+		//Recebe dois valores do tipo double e retorna um resultado do tipo double.
 		System.out.print("Digite um valor: ");
 		m.setValor1D(leia.nextDouble());
 		System.out.print("Digite um valor: ");
@@ -18,7 +18,7 @@ public class Principal extends Matematica {
 		System.out.println("Subtração: "+m.subtracao(m.getValor1D(), m.getValor2D()));
 		System.out.println("=========================================================");
 		
-		//Recebe dois valores inteiros e retorna um resultado inteiro.
+		//Recebe dois valores do tipo int e retorna um resultado do tipo int.
 		System.out.print("Digite um valor: ");
 		m.setValor1I(leia.nextInt());
 		System.out.print("Digite um valor: ");
@@ -27,7 +27,7 @@ public class Principal extends Matematica {
 		System.out.println("Subtração: "+m.subtracao(m.getValor1I(), m.getValor2I()));
 		System.out.println("=========================================================");
 		
-		//Recebe quatro valores inteiros e retorna um resultado inteiro(usando array).
+		//Recebe quatro valores do tipo int e retorna um resultado do tipo int(usando array).
 		for (int cont = 0; cont < m.valor.length; cont++) {
 			System.out.print("Digite um valor: ");
 				m.valor[cont] = leia.nextInt();
