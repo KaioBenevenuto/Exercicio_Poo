@@ -2,28 +2,28 @@ package exercicio1;
 
 public class Calculos {
 	
-	double v1, v2, resultado;
+	protected double v1, v2, resultado;
 
 	//---------------------------------------------------------------------------------------
 	
-	public double soma(double v1, double v2, double resultado) {
-		setResultado(getV1() + getV2());
-		return getResultado();
+	public double soma(double v1, double v2) {
+		this.resultado = v1 + v2;
+		return this.resultado;
 	}
 	
-	public double subtracao(double v1, double v2, double resultado) {
-		setResultado(getV1() - getV2());
-		return getResultado();
+	public double subtracao(double v1, double v2) {
+		this.resultado = v1 - v2;
+		return this.resultado;
 	}
 	
 	public double divisao(double v1, double v2) {
-		setResultado(getV1() / getV2());
-		return getResultado();
+		this.resultado = v1 / v2;
+		return this.resultado;
 	}
 	
-	public double mutiplicacao(double v1, double v2) {
-		setResultado(getV1() * getV2());
-		return getResultado();
+	public double multiplicacao(double v1, double v2) {
+		this.resultado = v1 * v2;
+		return this.resultado;
 	}
 	
 	//---------------------------------------------------------------------------------------
@@ -50,4 +50,6 @@ public class Calculos {
 	public void setResultado(double r) {
 		this.resultado = r;
 	}
+
+	
 }
