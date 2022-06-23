@@ -46,7 +46,6 @@ public class Principal {
 		System.out.println("3-Pessoa");
 		System.out.println("Nome: " + p3.nome);
 		System.out.println("Idade: " + p3.idade);
-		
 		System.out.println("Sexo: " + p3.sexo);
 	}
 
