@@ -78,4 +78,5 @@ public class Elevador {
 		this.andarAtual = andarAtual;
 	}
 
+	
 }
