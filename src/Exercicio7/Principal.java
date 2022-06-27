@@ -21,7 +21,6 @@ public class Principal extends Elevador {
 		System.out.println("Capacidade do elevador: "+ e.getCapacidadeElevador() + " Pessoas");
 		System.out.println("Quantidade de pessoas no elevador: " + e.getPessoasPresentes());
 		System.out.println("------------------------------------------");
-	
 	}
 
 }
