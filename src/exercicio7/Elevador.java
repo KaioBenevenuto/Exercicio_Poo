@@ -17,7 +17,7 @@ public class Elevador {
 		if(getPessoasPresentes() > 0) {
 			setPessoasPresentes(getPessoasPresentes() - 1);
 		}else {
-			System.out.println("Erro...");
+			System.out.println("Erro...Impossível um pessoa sair, se ninguém estiver no elevador");
 		}
 	}
 	public void subir(){
@@ -41,6 +41,7 @@ public class Elevador {
 		this.setCapacidadeElevador(capacidadeElevador);
 		this.setTotAndar(totAndar);
 		this.setAndarAtual(0);
+		this.setPessoasPresentes(0);
 	}
 	public Elevador() {
 		
