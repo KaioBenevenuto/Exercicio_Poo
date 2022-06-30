@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Login implements Conta {
 
-	private String email = "", senha, confirmSenha, nome;
+	private String email, senha, confirmSenha, nome;
 	private int noBot, auxiliar;
 	Scanner leia = new Scanner(System.in);
 
@@ -43,8 +43,10 @@ public class Login implements Conta {
 				s = leia.next();
 				if (e.equals(getEmail()) && (s.equals(getSenha()))) {
 					System.out.println("Carregando...");
+					System.out.println();
 				} else {
 					System.out.println("Email ou senha errada, tente novamente");
+					System.out.println();
 				}
 			} while (!getEmail().equals(e) || !getSenha().equals(s));
 
@@ -56,6 +58,7 @@ public class Login implements Conta {
 
 	@Override
 	public void criarConta() {
+
 		do {
 			System.out.println("---------------------------Criar conta---------------------------");
 			System.out.print("Digite seu nome completo: ");
@@ -91,47 +94,66 @@ public class Login implements Conta {
 		System.out.println();
 		System.out.println("Conta criada!!!");
 		System.out.println();
+
 	}
 
 	// --------------------------------------------------------------------------------------------------------------------
 
+	public Login() {
+		setEmail("");
+		setSenha("");
+		setConfirmSenha("");
+		setNome("");
+		setNoBot(0);
+		setAuxiliar(0);
+	}
+
 	public String getEmail() {
 		return email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
-	
 	public String getConfirmSenha() {
 		return confirmSenha;
 	}
+
 	public void setConfirmSenha(String confirmSenha) {
 		this.confirmSenha = confirmSenha;
 	}
 
-	
 	public String getSenha() {
 		return senha;
 	}
+
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
 
-	
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
-	
 	public int getNoBot() {
 		return noBot;
 	}
+
 	public void setNoBot(int noBot) {
 		this.noBot = noBot;
+	}
+
+	public int getAuxiliar() {
+		return auxiliar;
+	}
+
+	public void setAuxiliar(int auxiliar) {
+		this.auxiliar = auxiliar;
 	}
 
 }
