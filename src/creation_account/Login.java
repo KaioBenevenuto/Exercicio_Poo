@@ -49,7 +49,7 @@ public class Login implements Conta {
 			}while(!getEmail().equals(e) || !getSenha().equals(s));
 			
 		}else {
-			System.out.println("Para logar crie uma conta primeiro");
+			System.out.println("Crie uma conta primeiro para logar");
 		}
 		System.out.println();
 	}
