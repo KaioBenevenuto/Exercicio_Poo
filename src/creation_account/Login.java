@@ -98,39 +98,38 @@ public class Login implements Conta {
 	public String getEmail() {
 		return email;
 	}
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
+	
 	public String getConfirmSenha() {
 		return confirmSenha;
 	}
-
 	public void setConfirmSenha(String confirmSenha) {
 		this.confirmSenha = confirmSenha;
 	}
 
+	
 	public String getSenha() {
 		return senha;
 	}
-
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
 
+	
 	public String getNome() {
 		return nome;
 	}
-
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
 
+	
 	public int getNoBot() {
 		return noBot;
 	}
-
 	public void setNoBot(int noBot) {
 		this.noBot = noBot;
 	}
